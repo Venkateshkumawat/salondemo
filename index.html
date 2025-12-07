@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MintSalon Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: 'rgb(var(--color-primary-50) / <alpha-value>)',
+                100: 'rgb(var(--color-primary-100) / <alpha-value>)',
+                200: 'rgb(var(--color-primary-200) / <alpha-value>)',
+                300: 'rgb(var(--color-primary-300) / <alpha-value>)',
+                400: 'rgb(var(--color-primary-400) / <alpha-value>)',
+                500: 'rgb(var(--color-primary-500) / <alpha-value>)',
+                600: 'rgb(var(--color-primary-600) / <alpha-value>)',
+                700: 'rgb(var(--color-primary-700) / <alpha-value>)',
+                800: 'rgb(var(--color-primary-800) / <alpha-value>)',
+                900: 'rgb(var(--color-primary-900) / <alpha-value>)',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Hide scrollbar for clean UI in lists */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Default Theme Variables (Teal) - Will be overridden by JS */
+      :root {
+        --color-primary-50: 240 253 250;
+        --color-primary-100: 204 251 241;
+        --color-primary-200: 153 246 228;
+        --color-primary-300: 94 234 212;
+        --color-primary-400: 45 212 191;
+        --color-primary-500: 20 184 166;
+        --color-primary-600: 13 148 136;
+        --color-primary-700: 15 118 110;
+        --color-primary-800: 17 94 89;
+        --color-primary-900: 19 78 74;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.1/client",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.1",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
